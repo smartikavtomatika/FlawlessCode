@@ -1,0 +1,313 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{EE2EF84F-B694-451E-A321-869E5A765E0F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Namakalni_sistem</RootNamespace>
+    <AssemblyName>Namakalni sistem</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\Vuk\Dropbox\Namakanje\Vito\Program\EXE\TEST\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>7</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\..\..\..\..\Desktop\Zelko 5 ventilov BUILD\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>BFD5C6FBA9B686C35FEC237E386EF3F9B7495848</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Namakalni sistem_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>logo_huL_icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="avtomatika_sett.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="avtomatika_sett.Designer.cs">
+      <DependentUpon>avtomatika_sett.cs</DependentUpon>
+    </Compile>
+    <Compile Include="config.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="config.Designer.cs">
+      <DependentUpon>config.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1_1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Form1_1.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="sett_kapljicno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sett_kapljicno.Designer.cs">
+      <DependentUpon>sett_kapljicno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sett_vrt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sett_vrt.Designer.cs">
+      <DependentUpon>sett_vrt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sett_zelenica.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sett_zelenica.Designer.cs">
+      <DependentUpon>sett_zelenica.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Smartik.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Smartik.Designer.cs">
+      <DependentUpon>Smartik.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Veja1_photo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Veja1_photo.Designer.cs">
+      <DependentUpon>Veja1_photo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Veja2_photo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Veja2_photo.Designer.cs">
+      <DependentUpon>Veja2_photo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Veja3_photo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Veja3_photo.Designer.cs">
+      <DependentUpon>Veja3_photo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Veja4_photo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Veja4_photo.Designer.cs">
+      <DependentUpon>Veja4_photo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Veja5_photo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Veja5_photo.Designer.cs">
+      <DependentUpon>Veja5_photo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Veja6_photo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Veja6_photo.Designer.cs">
+      <DependentUpon>Veja6_photo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Veja7_photo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Veja7_photo.Designer.cs">
+      <DependentUpon>Veja7_photo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Veje_sett.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Veje_sett.Designer.cs">
+      <DependentUpon>Veje_sett.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Veje_sett2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Veje_sett2.Designer.cs">
+      <DependentUpon>Veje_sett2.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="avtomatika_sett.resx">
+      <DependentUpon>avtomatika_sett.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="config.resx">
+      <DependentUpon>config.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1_1.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Form1_1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="sett_kapljicno.resx">
+      <DependentUpon>sett_kapljicno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sett_vrt.resx">
+      <DependentUpon>sett_vrt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sett_zelenica.resx">
+      <DependentUpon>sett_zelenica.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Smartik.resx">
+      <DependentUpon>Smartik.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Veja1_photo.resx">
+      <DependentUpon>Veja1_photo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Veja2_photo.resx">
+      <DependentUpon>Veja2_photo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Veja3_photo.resx">
+      <DependentUpon>Veja3_photo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Veja4_photo.resx">
+      <DependentUpon>Veja4_photo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Veja5_photo.resx">
+      <DependentUpon>Veja5_photo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Veja6_photo.resx">
+      <DependentUpon>Veja6_photo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Veja7_photo.resx">
+      <DependentUpon>Veja7_photo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Veje_sett.resx">
+      <DependentUpon>Veje_sett.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Veje_sett2.resx">
+      <DependentUpon>Veje_sett2.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Namakalni sistem_TemporaryKey.pfx" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg_logo_horizontalni_veliki.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\papir_logo_horizontalni_veliki.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="logo_huL_icon.ico" />
+    <None Include="Resources\Brez odzadja parcela 5.png" />
+    <None Include="Resources\Brez odzadja parcela 4.png" />
+    <None Include="Resources\Brez odzadja parcela 3.png" />
+    <None Include="Resources\Brez odzadja parcela 2.png" />
+    <None Include="Resources\Brez odzadja parcela 1.png" />
+    <None Include="Resources\Brez odzadja parcela.png" />
+    <None Include="Resources\V7.png" />
+    <None Include="Resources\V6.png" />
+    <None Include="Resources\V5.png" />
+    <None Include="Resources\V4.png" />
+    <None Include="Resources\V3.png" />
+    <None Include="Resources\V22.png" />
+    <None Include="Resources\V21.png" />
+    <None Include="Resources\V12.png" />
+    <None Include="Resources\V2.png" />
+    <None Include="Resources\V11.png" />
+    <None Include="Resources\V1.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
